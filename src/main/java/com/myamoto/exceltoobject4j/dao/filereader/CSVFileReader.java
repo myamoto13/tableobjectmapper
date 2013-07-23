@@ -25,9 +25,12 @@ public class CSVFileReader implements ITableFileReader {
 	 * @throws IOException 
 	 * @throws ExToObj4jDAOException 
 	 */
-	public GenericTableContent readFile(File file) throws ExToObj4jDAOException {
+	public GenericTableContent readFile(String filePath) throws ExToObj4jDAOException {
+
 		GenericTableContent result = new GenericTableContent();
-		if(CARACTERE_ESPACEMENT != null){
+
+		if(filePath != null){
+			File file = new File(filePath);
 			if(file!=null && file.exists() && file.canRead()) {
 				FileInputStream fIs = null;
 				InputStreamReader reader = null;
@@ -92,5 +95,6 @@ public class CSVFileReader implements ITableFileReader {
 	public List<String> getManagedFormatList() {
 		return Arrays.asList(new String[]{CSV_FILEFORMAT});
 	}
+
 
 }
