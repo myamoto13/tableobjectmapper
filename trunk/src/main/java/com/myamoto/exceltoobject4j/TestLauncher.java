@@ -6,6 +6,7 @@ import javax.annotation.Resource;
 
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import com.myamoto.exceltoobject4j.dao.ExToObj4jDAOException;
 import com.myamoto.exceltoobject4j.service.TableObjectMapper;
 
 
@@ -22,7 +23,7 @@ public class TestLauncher {
 		this.tableObjectMapper = tableObjectMapper;
 	}
 
-	private void launch(){
+	private void launch() throws ExToObj4jDAOException{
 		String tableFilePath = "example_data.csv";
 		String configurationFilePath = "example_config.xml";
 		
@@ -32,6 +33,10 @@ public class TestLauncher {
 	public static void main(String[] args) {
 		ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext(new String[] {"spring.xml"});
 		TestLauncher launcher = context.getBean("testLauncher", TestLauncher.class);
-		launcher.launch();
+		try {
+			launcher.launch();
+		} catch (ExToObj4jDAOException e) {
+			e.printStackTrace();
+		}
 	}
 }

@@ -7,6 +7,7 @@ import javax.annotation.Resource;
 import com.myamoto.exceltoobject4j.dao.ExToObj4jDAOException;
 import com.myamoto.exceltoobject4j.dao.GenericTableContent;
 import com.myamoto.exceltoobject4j.dao.filereader.TableFileReader;
+import com.myamoto.exceltoobject4j.dao.filewriter.TableFileWriter;
 
 public class TableObjectMapper {
 
@@ -14,7 +15,7 @@ public class TableObjectMapper {
 	private TableFileReader tableFileReader;
 
 	@Resource(name="tableFileWriter")
-	private TableFileReader tableFileWriter;
+	private TableFileWriter tableFileWriter;
 
 	public TableFileReader getTableFileReader() {
 		return tableFileReader;
@@ -24,11 +25,11 @@ public class TableObjectMapper {
 		this.tableFileReader = tableFileReader;
 	}
 
-	public TableFileReader getTableFileWriter() {
+	public TableFileWriter getTableFileWriter() {
 		return tableFileWriter;
 	}
 
-	public void setTableFileWriter(TableFileReader tableFileWriter) {
+	public void setTableFileWriter(TableFileWriter tableFileWriter) {
 		this.tableFileWriter = tableFileWriter;
 	}
 
