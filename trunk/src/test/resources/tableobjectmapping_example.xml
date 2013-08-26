@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+
+<tableObjectMapping>
+	<typeMapper className="com.myamoto.exceltoobject4j.data.Pont">
+		<fieldMapper name="id" identificator="true" />
+		<fieldMapper name="name" />
+		<fieldMapper name="pileList" />
+	</typeMapper>
+	<typeMapper className="com.myamoto.exceltoobject4j.data.Pile">
+		<fieldMapper name="id" identificator="true" />
+		<fieldMapper name="name" />
+		<fieldMapper name="type" />
+	</typeMapper>
+	<typeMapper className="com.myamoto.exceltoobject4j.data.TypePile">
+		<fieldMapper name="nom" identificator="true" />
+	</typeMapper>
+</tableObjectMapping>

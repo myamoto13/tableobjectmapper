@@ -2,12 +2,12 @@ package com.myamoto.exceltoobject4j.dao.filereader;
 
 import java.util.List;
 
-import com.myamoto.exceltoobject4j.dao.ExToObj4jDAOException;
-import com.myamoto.exceltoobject4j.dao.GenericTableContent;
+import com.myamoto.exceltoobject4j.dao.ExToObj4jException;
+import com.myamoto.exceltoobject4j.dao.TableContent;
 
 public interface ITableFileReader {
 
-	GenericTableContent readFile(String filePath) throws ExToObj4jDAOException;
+	TableContent readFile(String filePath) throws ExToObj4jException;
 	
 	List<String> getManagedFormatList();
 }

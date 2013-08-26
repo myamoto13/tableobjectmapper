@@ -4,8 +4,8 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import com.myamoto.exceltoobject4j.dao.ExToObj4jDAOException;
-import com.myamoto.exceltoobject4j.dao.GenericTableContent;
+import com.myamoto.exceltoobject4j.dao.ExToObj4jException;
+import com.myamoto.exceltoobject4j.dao.TableContent;
 import com.myamoto.exceltoobject4j.dao.filereader.TableFileReader;
 import com.myamoto.exceltoobject4j.dao.filewriter.TableFileWriter;
 
@@ -20,7 +20,7 @@ public class TableObjectMapper {
 	public TableFileReader getTableFileReader() {
 		return tableFileReader;
 	}
-
+	
 	public void setTableFileReader(TableFileReader tableFileReader) {
 		this.tableFileReader = tableFileReader;
 	}
@@ -33,10 +33,13 @@ public class TableObjectMapper {
 		this.tableFileWriter = tableFileWriter;
 	}
 
-	public List importObjects(String tableFilePath, String configurationFilePath) throws ExToObj4jDAOException {
+	public List importObjects(String tableFilePath, String objectMappingFilePath) throws ExToObj4jException {
 		List result = null;
 		
-		GenericTableContent content = tableFileReader.readFile(tableFilePath);
+		TableContent content = tableFileReader.readFile(tableFilePath);
+		
+		//TODO Valider le format du fichier objectMappingFilePath avec un XSD
+		
 		
 		return result;
 	}
