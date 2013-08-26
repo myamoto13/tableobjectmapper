@@ -1,0 +1,3 @@
+pont.name;pont.id;pont.pile1.name;pont.pile1.type.name;pont.pile2.name;pont.pile2.type.name;
+pont1;1;pile 1;Béton armé;pile 2;Bois renforcé;
+pont2;2;pile 1;Bois renforcé;pile 2;Béton armé;

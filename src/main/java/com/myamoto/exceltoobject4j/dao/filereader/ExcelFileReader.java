@@ -4,8 +4,8 @@ import java.io.File;
 import java.util.Arrays;
 import java.util.List;
 
-import com.myamoto.exceltoobject4j.dao.ExToObj4jDAOException;
-import com.myamoto.exceltoobject4j.dao.GenericTableContent;
+import com.myamoto.exceltoobject4j.dao.ExToObj4jException;
+import com.myamoto.exceltoobject4j.dao.TableContent;
 
 public class ExcelFileReader implements ITableFileReader {
 
@@ -16,8 +16,8 @@ public class ExcelFileReader implements ITableFileReader {
 	}
 
 	@Override
-	public GenericTableContent readFile(String filePath)
-			throws ExToObj4jDAOException {
+	public TableContent readFile(String filePath)
+			throws ExToObj4jException {
 		// TODO Auto-generated method stub
 		return null;
 	}

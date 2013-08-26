@@ -1,17 +1,17 @@
 package com.myamoto.exceltoobject4j.dao;
 
-public class ExToObj4jDAOException extends Exception {
+public class ExToObj4jException extends Exception {
 
 	/**
 	 * 
 	 */
 	private static final long serialVersionUID = -5087811101547067476L;
 
-	public ExToObj4jDAOException(String msg, Throwable throwable) {
+	public ExToObj4jException(String msg, Throwable throwable) {
 		super(msg, throwable);
 	}
 	
-	public ExToObj4jDAOException(String msg) {
+	public ExToObj4jException(String msg) {
 		this(msg, null);
 	}
 	
