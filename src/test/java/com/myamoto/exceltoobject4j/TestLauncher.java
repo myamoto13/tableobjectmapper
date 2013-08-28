@@ -6,7 +6,6 @@ import org.junit.Assert;
 import org.junit.Test;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-import com.myamoto.exceltoobject4j.dao.ExToObj4jException;
 import com.myamoto.exceltoobject4j.service.TableObjectMapper;
 
 public class TestLauncher {
@@ -22,6 +21,7 @@ public class TestLauncher {
 		try {
 			List objectList = tableObjectMapper.importObjects(tableFilePath, configurationFilePath);
 		} catch (ExToObj4jException e) {
+			e.printStackTrace();
 			Assert.fail(e.getMessage());
 		}
 		
