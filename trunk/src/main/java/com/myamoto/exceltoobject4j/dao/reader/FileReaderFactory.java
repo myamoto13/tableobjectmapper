@@ -1,4 +1,4 @@
-package com.myamoto.exceltoobject4j.dao.filereader;
+package com.myamoto.exceltoobject4j.dao.reader;
 
 import java.util.ArrayList;
 import java.util.List;

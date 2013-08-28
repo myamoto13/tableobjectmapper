@@ -1,4 +1,4 @@
-package com.myamoto.exceltoobject4j.dao.filewriter;
+package com.myamoto.exceltoobject4j.dao.writer;
 
 import java.io.BufferedWriter;
 import java.io.File;

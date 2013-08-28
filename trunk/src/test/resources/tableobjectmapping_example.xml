@@ -1,6 +1,8 @@
 <?xml version="1.0"?>
-
-<tableObjectMapping>
+<tableObjectMapping xmlns="http://www.exceltoobject4j.myamoto.com/tableObjectMapping"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.exceltoobject4j.myamoto.com/tableObjectMapping ../../../src/main/resources/tableimporterconfig.xsd">
+	
 	<typeMapper className="com.myamoto.exceltoobject4j.data.Pont">
 		<fieldMapper name="id" identificator="true" />
 		<fieldMapper name="name" />

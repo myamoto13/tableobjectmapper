@@ -1,9 +1,9 @@
-package com.myamoto.exceltoobject4j.dao.filereader;
+package com.myamoto.exceltoobject4j.dao.reader;
 
 import java.io.File;
 import java.util.List;
 
-import com.myamoto.exceltoobject4j.dao.ExToObj4jException;
+import com.myamoto.exceltoobject4j.ExToObj4jException;
 import com.myamoto.exceltoobject4j.dao.TableContent;
 
 public class OpenOfficeFileReader implements ITableFileReader {
