@@ -34,6 +34,9 @@
 						</goals>
 					</execution>
 				</executions>
+				<configuration>
+				<generateDirectory>./src/main/java</generateDirectory>
+				</configuration>
 			</plugin>
 		</plugins>
 	</build>
